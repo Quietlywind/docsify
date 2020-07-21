@@ -26,9 +26,9 @@ export default {
 }
 ```
 
-在组件中使用 [$route] 会使之与其对应路由形成高度耦合，从而使组件只能在某些特定的 URL 上使用，限制了其灵活性。
+在组件中使用 `$route` 会使之与其对应路由形成高度耦合，从而使组件只能在某些特定的 URL 上使用，限制了其灵活性。
 
-正确的做法是通过 [props] 解耦
+正确的做法是通过 `props` 解耦
 
 ```javascript
 const router = new VueRouter({
@@ -40,7 +40,7 @@ const router = new VueRouter({
 })
 ```
 
-将路由的 [props] 属性设置为 [true] 后，组件内可通过 [props] 接收到 [params] 参数
+将路由的 `props` 属性设置为 `true` 后，组件内可通过 `props` 接收到 `params` 参数
 
 ```javascript
 export default {
@@ -53,7 +53,7 @@ export default {
 }
 ```
 
-另外你还可以通过函数模式来返回 [props]
+另外你还可以通过函数模式来返回 `props`
 
 ```javascript
 const router = new VueRouter({
