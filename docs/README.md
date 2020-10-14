@@ -654,3 +654,7 @@ this.$message({
 ```
 
 文档：[cn.vuejs.org/v2/api](cn.vuejs.org/v2/api)
+
+### 正则
+
+`replace(/(?<=\d)(,)(?=\d)/g,'')`
